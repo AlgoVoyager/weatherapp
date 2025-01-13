@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  /* background-color: rgb(11, 20, 29); */
+  background: rgb(35, 35, 36);
+  background: linear-gradient(191deg, rgba(35, 35, 36, 1) 0%, rgba(33, 52, 55, 1) 36%, rgba(0, 71, 112, 1) 100%);
+  color: white;
+  height: 100vh;
+}
+
+header {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+header div {
+  width: 40%;
+  border-radius: 3em;
+  border: 1px solid grey;
+
+}
+
+header div:focus {
+  outline: 1px gray solid;
+}
+
+header div input {
+  padding: 1em 2em;
+  width: 80%;
+  border-radius: 3em 0 0 3em;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+header div input:focus {
+  outline: none;
+}
+
+header div button {
+  width: 20%;
+  height: 100%;
+  border-radius: 3em 3em 3em 3em;
+  background-color: transparent;
+  color: white;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+header div button:hover {
+  border: 1px solid grey;
+
+}
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.overview {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgba(128, 128, 128, 0.459); */
+  border-radius: 1em;
+  padding: 1em;
+
+}
+
+.overview-left {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+
+}
+
+.overview-left .main-temp {
+  display: flex;
+  align-items: center;
+
+}
+
+.temp-amount {
+  font-size: 2.5em;
+}
+
+.temp-unit {
+  align-self: start;
+  font-size: large;
+}
+
+.overview-left .other-data {
+  color: gray;
+  align-self: start;
+}
+
+.overview-right {
+  text-align: right;
+}
+
+.daysWeather{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:2px;
+  width: 80%;
+  /* background-color: aqua; */
+  margin: 0 auto;
+}
+.DayWeather{
+  background-color: rgba(128, 128, 128, 0.384);
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 1em;
+  width: 150px;
+  cursor: pointer;
+}
+.dayTemp{
+  display: flex;
+  gap:5px;
+  align-items:center;
+}
+.tempMin{
+  color: lightgray;
+}
+.tempMax, .tempMin{
+  font-size: small;
+}

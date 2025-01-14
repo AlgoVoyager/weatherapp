@@ -15,7 +15,7 @@ const DayWeather = ( fList) => {
             <div className="weekday">
                 {weekdays[j]}
             </div>
-            <img src="" alt={Object(fList).fList[i].weather[0].main} className="dayImg" />
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt={Object(fList).fList[i].weather[0].main} className="dayImg" />
             <div className="dayTemp">
                 <div className="tempMax">
                     {Object(fList).fList[i].main.temp_max.toFixed(1)}

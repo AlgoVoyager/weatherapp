@@ -23,8 +23,6 @@ const DayWeather = ( fList) => {
                 <div className="tempMin">
                     {Object(fList).fList[i].main.temp_min.toFixed(1)}
                 </div>
-                    
-
             </div>
       </div>);
     //   i++;

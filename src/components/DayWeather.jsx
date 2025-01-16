@@ -28,12 +28,7 @@ const DayWeather = ( fList) => {
     //   i++;
       j++;
     }
-
-    
-
-  
     return <div className="daysWeather">{items}</div>;
   };
-  
   export default DayWeather;
   
